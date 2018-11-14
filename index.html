@@ -23,7 +23,7 @@
 	  box-sizing: border-box;
 	}
 
-	#myInput {
+	.myInput {
 	  background-image: url('searchicon.png');
 	  background-position: 10px 12px;
 	  background-repeat: no-repeat;
@@ -45,10 +45,10 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12">
-			<input type="text" id="myInput" onkeyup="searchTable(this.value, 'list')" placeholder="Search all categories..." title="Search">
-			<input type="text" id="myInput" onkeyup="searchTable(this.value, 'list', 0)" placeholder="Search firstnames..." title="Search">
-			<input type="text" id="myInput" onkeyup="searchTable(this.value, 'list', 1)" placeholder="Search lastnames..." title="Search">		
-			<input type="text" id="myInput" onkeyup="searchTable(this.value, 'list', 2)" placeholder="Search emails..." title="Search">	
+			<input type="text" class="myInput" onkeyup="searchTable(this.value, 'list')" placeholder="Search all categories..." title="Search">
+			<input type="text" class="myInput" onkeyup="searchTable(this.value, 'list', 0)" placeholder="Search firstnames..." title="Search">
+			<input type="text" class="myInput" onkeyup="searchTable(this.value, 'list', 1)" placeholder="Search lastnames..." title="Search">		
+			<input type="text" class="myInput" onkeyup="searchTable(this.value, 'list', 2)" placeholder="Search emails..." title="Search">	
 			
 			<table id="list" class="table table-striped">
 			<thead>
