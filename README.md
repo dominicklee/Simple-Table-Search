@@ -3,7 +3,7 @@ Filter HTML table content with Javascript. Have a big HTML table with frequently
 
 ## Installation ##
 
-Download this repository and upload the `tablesearch.js ` and `searchicon.png` to a subfolder on your web server.
+Download this repository and upload the `tablesearch.js` and `searchicon.png` to a subfolder on your web server.
 
 ## Usage ##
 
