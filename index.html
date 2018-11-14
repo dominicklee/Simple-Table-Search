@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Table Search Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="tablesearch.js"></script>
+	<style>
+	.footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: #2d2d2d;
+		color: white;
+		text-align: center;
+	}
+
+	* {
+	  box-sizing: border-box;
+	}
+
+	#myInput {
+	  background-image: url('searchicon.png');
+	  background-position: 10px 12px;
+	  background-repeat: no-repeat;
+	  width: 100%;
+	  font-size: 16px;
+	  padding: 12px 20px 12px 40px;
+	  border: 1px solid #ddd;
+	  margin-bottom: 12px;
+	}
+
+	</style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h2 style="color:#0026FF;">Table Search Example</h2>
+</div>
+  
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<input type="text" id="myInput" onkeyup="searchTable(this.value, 'list')" placeholder="Search all categories..." title="Search">
+			<input type="text" id="myInput" onkeyup="searchTable(this.value, 'list', 0)" placeholder="Search firstnames..." title="Search">
+			<input type="text" id="myInput" onkeyup="searchTable(this.value, 'list', 1)" placeholder="Search lastnames..." title="Search">		
+			<input type="text" id="myInput" onkeyup="searchTable(this.value, 'list', 2)" placeholder="Search emails..." title="Search">	
+			
+			<table id="list" class="table table-striped">
+			<thead>
+			  <tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>Apple</td>
+				<td>Bee</td>
+				<td>abee@example.com</td>
+			  </tr>
+			  <tr>
+				<td>Chuck</td>
+				<td>Norris</td>
+				<td>cnorris@example.com</td>
+			  </tr>
+			  <tr>
+				<td>Jason</td>
+				<td>Bourne</td>
+				<td>jbourne@example.com</td>
+			  </tr>
+			  <tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>jdoe@example.com</td>
+			  </tr>
+			  <tr>
+				<td>John</td>
+				<td>Smith</td>
+				<td>jsmith@example.com</td>
+			  </tr>
+			  <tr>
+				<td>Molly</td>
+				<td>Jane</td>
+				<td>mjane@example.com</td>
+			  </tr>
+			  <tr>
+				<td>Ruth</td>
+				<td>Thompson</td>
+				<td>rthomp@example.com</td>
+			  </tr>
+			  <tr>
+				<td>Tom</td>
+				<td>Jones</td>
+				<td>tjones@example.com</td>
+			  </tr>
+			</tbody>
+			</table>
+			
+			<div style="padding-bottom:50px;">&nbsp;</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer navbar-fixed-bottom">
+	<p style="padding-top:5px;">&copy; 2018 by Dominick Lee.</p>
+</div>
+
+</body>
+</html>
