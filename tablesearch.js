@@ -1,4 +1,4 @@
-function searchTable(input, tableId, searchColumn = -1) 
+function searchTable(input, tableId, searchColumn = -1, searchColumn2 = -1) 
 {
     var filter = input.toUpperCase();
 	var table = document.getElementById(tableId);
@@ -27,6 +27,16 @@ function searchTable(input, tableId, searchColumn = -1)
 				}
 				else {
 					row.style.display = "none";
+				}
+				
+				if (searchColumn2 != -1) {	//and also search in 2nd category too
+					rowText = row.cells[searchColumn2].innerHTML;	//get text for the whole row
+					if (rowText.toUpperCase().indexOf(filter) > -1) {	//if upper case matches any part of filter
+						row.style.display = "";
+					}
+					else {
+						row.style.display = "none";
+					}	
 				}
 			}
 		}

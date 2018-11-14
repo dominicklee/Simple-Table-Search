@@ -16,3 +16,5 @@ Refer to the `index.html` page for examples. To use this JS function, you simply
 ## Filter in a column ##
 
 For example, if you want to search for last names, which are in column 2 (counting from 0), you can search for items in a specific column like this: `onkeyup="searchTable(this.value, 'list', 2)"`
+
+If you want to search in two specific columns (e.g. first and last name) which are respectively in columns 1 and 2, then you can use more specific arguments: `onkeyup="searchTable(this.value, 'list', 1, 2)"`
