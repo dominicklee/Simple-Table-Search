@@ -2,7 +2,7 @@ function searchTable(input, tableId, searchColumn = -1, searchColumn2 = -1, sear
 {
     var filter = input.toUpperCase();
 	var table = document.getElementById(tableId);
-	var rowText, rowText2;	//temporary var
+	var rowText, rowText2, rowText3;	//temporary var
 	
 	for (var i = 0, row; row = table.rows[i]; i++) {
 		//iterate through rows
